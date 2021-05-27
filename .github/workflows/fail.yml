@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  wait:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Delay
+        run: "sleep 10"
